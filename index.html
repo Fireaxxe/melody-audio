@@ -3,41 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Listen Along</title>
+  <title>Listen Along with Melody</title>
   <style>
     body {
-      font-family: sans-serif;
-      padding: 20px;
-      background-color: #fdf6f0;
+      font-family: "Comic Sans MS", "Poppins", sans-serif;
+      background-color: #fff8f1;
       color: #333;
+      padding: 20px;
+      margin: 0;
     }
     h1 {
       text-align: center;
+      font-size: 1.8em;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .cover-container {
+      text-align: center;
+    }
+    .cover-container img {
+      max-width: 250px;
+      border-radius: 15px;
+      margin: 10px auto 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
     .instrument {
-      margin-bottom: 20px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 15px;
+      margin: 20px auto;
+      max-width: 500px;
+    }
+    .instrument h3 {
+      margin-top: 0;
+      font-size: 1.1em;
+      text-align: center;
+      color: #5e4b8b;
     }
     audio {
       width: 100%;
-      max-width: 400px;
-      display: block;
-      margin: 10px auto;
+      margin-top: 10px;
     }
-    img.cover {
-      max-width: 300px;
-      display: block;
-      margin: 0 auto 30px auto;
-      border-radius: 10px;
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.4em;
+      }
+      .instrument {
+        padding: 10px;
+      }
     }
   </style>
 </head>
 <body>
+
   <h1>🎵 Listen Along with Melody’s Musical Alphabet Adventure 🎵</h1>
 
-  <!-- Optional: Add a book cover here -->
-<img class="cover" src="Front%20Cover.png" alt="Book Cover" />
-  
-  <!-- Audio players -->
+  <div class="cover-container">
+    <img src="Front%20Cover.png" alt="Book Cover">
+  </div>
+
+  <!-- Audio Players Below -->
   <div class="instrument"><h3>Accordion</h3><audio controls src="Accordion.mp3"></audio></div>
   <div class="instrument"><h3>Banjo</h3><audio controls src="Banjo.mp3"></audio></div>
   <div class="instrument"><h3>Cello</h3><audio controls src="Cello.mp3"></audio></div>
